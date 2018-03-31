@@ -38,43 +38,12 @@
     th {
         border-bottom: 1px solid #d4d4d4;
     }
-    #main-nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow: auto;
-    }
-
-    #main-nav li {
-    float: left;
-    width: 33%;
-    height: 25px;
-    text-align: center;
-    }
-
-    #main-nav li a {
-    width: 100%;
-    display: block;
-    height: 100%;
-    line-height: 25px;
-    text-decoration: none;
-    background-color: #e0e0f0;
-    font-weight: bold;
-    color: #021020;
-    }
-
-    #main-nav li a:hover {
-        background-color: #498cd5;
-        color: #ddeeee;
-    }
-
 </style>
 <body class="w3-light-grey">
     <!-- Top container -->
     <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
         <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i> �Menu</button>
-        <span class="w3-bar-item w3-right">KKHALLI.TK</span>
+        <span class="w3-bar-item w3-right"></span>
     </div>
     <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar">
@@ -92,13 +61,13 @@
         <div class="w3-container">
             <h5></h5>
         </div>
-        <!--<div class="w3-bar-block">
+        <div class="w3-bar-block">
             <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>� Close Menu</a>
-            <a href="index.html" class="w3-bar-item w3-button w3-padding w3-blue">Rentals</a>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding w3-blue">House</a>
             <a href="ladiespg.html" class="w3-bar-item w3-button w3-padding w3-blue">Ladies PG</a>
             <a href="gentspg.html" class="w3-bar-item w3-button w3-padding w3-blue">Gents PG</a>
             <br><br>
-        </div>-->
+        </div>
         <div>
             <table border="1">
                 <tr><td><b><strong>LALITHA ENTERPRISES</strong></b></td></tr>
@@ -128,32 +97,47 @@
     <!-- !PAGE CONTENT! -->
     <div class="w3-main" style="margin-left:300px;margin-top:43px;">
         <!-- Header -->
-        <header class="w3-container" style="padding-top:22px">
-            <h5><b>Contact 9964064453 / 8971330145</b></h5>
-        </header>
-        <div>
-            <ul id="main-nav">
-                <li><a href="index.html" style="background-color: #498cd5;">House Rentals</a></li>
-                <li><a href="ladiespg.html">Ladies PG</a></li>
-                <li><a href="gentspg.html">Gents PG</a></li>
-            </ul>
-        </div>
-        <!--<div class="w3-row-padding w3-margin-bottom">
-            <div class="w3-quarter">
-                <img src="h1.jpg" />
-            </div>
-            <div class="w3-quarter">
-                <img src="h1.jpg" />
-            </div>
-            <div class="w3-quarter">
-                <img src="h1.jpg" />
-            </div>
-            <div class="w3-quarter">
-                <img src="h1.jpg" />
-            </div>
+        <!--<header class="w3-container" style="padding-top:22px">
+        <h5><b><i class="fa fa-dashboard"></i>KKHALLI - Contact 9964064453 / 8971330145</b></h5>
+    </header>-->
+        <style type="text/css">
+            td.thickBorder {
+                border: solid #000 3px;
+            }
+        </style>
+        <div class="w3-row-padding w3-margin-bottom">
+            <table style="width:100%">
+                <tr>
+                    <td>
+                        <table>
+                            <tr><td colspan="3"> <h5><b>KKHALLI - Contact 9964064453 / 8971330145</b></h5></td></tr>
+                            <tr>
+                                <td class="thickBorder">
+                                    <a href="index.html" class="w3-bar-item w3-button w3-padding w3-blue">House</a>
+                                </td>
+                                <td>
+                                    <a href="ladiespg.html" class="w3-bar-item w3-button w3-padding w3-blue">Ladies PG</a>
+                                </td>
+                                <td> <a href="gentspg.html" class="w3-bar-item w3-button w3-padding w3-blue">Gents PG</a></td>
+                            </tr>
+                        </table>
+                    </td>
 
-        </div>-->
-     
+                    <td>
+                        <div class="w3-quarter">
+                            <img src="h1.jpg" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-quarter">
+                            <img src="h1.jpg" />
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
 
         <!-- Footer -->
         <footer class="w3-container w3-padding-16 w3-light-grey"></footer>
@@ -230,7 +214,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('table.search-table').tableSearch({
-                searchText: '<b>Search Rentals&nbsp;</b>',
+                searchText: '<b>Search Houses&nbsp;</b>',
                 searchPlaceHolder: ''
             });
         });
